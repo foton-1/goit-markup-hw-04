@@ -1,0 +1,388 @@
+:root {
+  --main-title-color: #2e2f42;
+  --second-title-color: #434455;
+  --akcent-color: #404bbf;
+  --color-theme-dark: #ffffff;
+  --theme-dark: #4d5ae5;
+  --logo-color-light: #f4f4fd;
+  --text-color-light: #e7e9fc;
+  --typical-lh: 1.5;
+  --typical-ls: 0.02em;
+}
+
+.list {
+  list-style: none;
+}
+
+.link {
+  text-decoration: none;
+}
+body {
+  font-family: 'Roboto', sans-serif;
+  margin: 0;
+}
+
+/*--Reset settings--*/
+h1,
+h2,
+h3,
+p {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+ul,
+ol {
+  margin-top: 0;
+  margin-bottom: 0;
+  padding-left: 0;
+}
+
+img {
+  display: block;
+}
+
+button {
+  cursor: pointer;
+}
+
+address {
+  font-style: normal;
+}
+/*--contanair--*/
+.container {
+  width: 1158px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
+}
+
+/*-----------------------COMPONENTS----------------*/
+.section-title {
+  font-size: 36px;
+  line-height: 1.11;
+  letter-spacing: var(--typical-ls);
+  color: var(--main-title-color);
+  text-align: center;
+}
+.section-heading {
+  font-size: 20px;
+  font-weight: 500;
+  line-height: 1.2;
+  letter-spacing: var(--typical-ls);
+  color: var(--main-title-color);
+  margin-bottom: 8px;
+}
+.section-description {
+  line-height: var(--typical-lh);
+  letter-spacing: var(--typical-ls);
+  color: var(--second-title-color);
+}
+.logo {
+  font-family: 'Raleway', sans-serif;
+  font-size: 18px;
+  font-weight: 800;
+  line-height: 1.33;
+  letter-spacing: 0.03em;
+  text-transform: uppercase;
+}
+.logo-theme-light {
+  margin-right: 76px;
+
+  color: var(--main-title-color);
+}
+.logo-theme-dark {
+  /*--margin-bottom: 100px;--*/
+  color: var(--logo-color-light);
+}
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
+}
+span.akcent {
+  color: var(--theme-dark);
+}
+/*=====================\COMPONENTS==================*/
+
+/*-------------------------HEADER-------------------*/
+.header {
+  border-bottom: 1px solid var(--text-color-light);
+}
+.header-link {
+  font-weight: 500;
+  font-size: 16px;
+  line-height: var(--typical-lh);
+  color: var(--main-title-color);
+}
+.header-link:hover,
+.header-link:focus {
+  color: var(--akcent-color);
+}
+.header-mail,
+.header-tel {
+  line-height: var(--typical-lh);
+  letter-spacing: var(--typical-ls);
+  color: var(--second-title-color);
+}
+.header-mail:hover,
+.header-mail:focus {
+  color: var(--akcent-color);
+}
+.header-tel:hover,
+.header-tel:focus {
+  color: var(--akcent-color);
+}
+
+.header-container {
+  display: flex;
+  align-items: center;
+  /*justify-content: space-between;*/
+  padding-top: 24px;
+  padding-bottom: 24px;
+}
+
+.header-list {
+  display: flex;
+  gap: 40px;
+}
+/* як альтернатива для "gap" можливі варіанти: 
+.header-list-item:not(:last-child) {
+  margin-right: 40px;
+}
+або
+.header-list .header-list-item + .header-list-item {
+  margin-left: 40px;
+}
+--*/
+.header-address-list {
+  display: flex;
+  gap: 40px;
+}
+/*Або варіант відступу емейл та телеф: 
+.header-address-item:not(:last-child) {
+  margin-right: 40px;
+}*/
+.header-address {
+  margin-left: auto;
+}
+
+/*=====================/HEADER==================*/
+
+/*-------------------------HERO------------------*/
+.hero {
+  padding-top: 188px;
+  padding-bottom: 188px;
+
+  background-color: var(--main-title-color);
+  text-align: center;
+  /*outline: 1px solid hsl(0, 95%, 50%);*/
+}
+.hero-box {
+  margin-left: auto;
+  margin-right: auto;
+
+  width: 496px;
+}
+.hero-title {
+  margin-bottom: 48px;
+
+  font-family: 'Roboto';
+  font-size: 56px;
+  line-height: 1.07;
+  letter-spacing: var(--typical-ls);
+  color: var(--color-theme-dark);
+}
+.hero-btn {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  padding-left: 32px;
+  padding-right: 32px;
+  border-radius: 4px;
+  border: none;
+
+  font-family: inherit;
+  font-size: 16px;
+  font-weight: 500;
+  line-height: var(--typical-lh);
+  letter-spacing: 0.04em;
+  color: var(--color-theme-dark);
+  background-color: var(--theme-dark);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+.hero-btn:hover,
+.hero-btn:focus {
+  background-color: var(--akcent-color);
+  box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+}
+
+/*================================/HERO=======*/
+
+/*-----------------------------------Concept--*/
+.concept {
+  padding-top: 120px;
+  padding-bottom: 120px;
+}
+
+.concept-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.concept-item {
+  width: calc((100% - 72px) / 4);
+}
+/* Як варіант замість gap:
+.concept-item {
+  width: calc((100% - 72px) / 4);
+  margin-right: 24px;
+}
+.concept-item:nth-child(4) {
+  margin-right: 0;
+}
+*/
+
+/*--------------------------------------services--*/
+.services {
+  padding-bottom: 120px;
+}
+.services-list {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.services-title {
+  margin-bottom: 72px;
+}
+.services-img {
+  border: 1px solid var(--text-color-light);
+  width: calc((100% - 48px - 0px) / 3);
+}
+
+/*----------------------------------------TEAM----*/
+.team {
+  padding-top: 120px;
+  padding-bottom: 120px;
+
+  background-color: var(--logo-color-light);
+}
+.team-title {
+  margin-bottom: 72px;
+}
+.team-container {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.team-person {
+  flex-basis: calc((100% - 72px) / 4);
+}
+.team-person {
+  text-align: center;
+}
+
+.team-percon-info {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
+    0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
+  border-radius: 0px 0px 4px 4px;
+
+  background-color: var(--color-theme-dark);
+}
+/*==========================================/TEAM===*/
+
+/*------------------------------------------FOOTER--*/
+.footer {
+  padding-top: 100px;
+  padding-bottom: 100px;
+
+  background-color: var(--main-title-color);
+}
+.footer-text {
+  margin-top: 16px;
+
+  line-height: var(--typical-lh);
+  letter-spacing: var(--typical-ls);
+  color: var(--text-color-light);
+  max-width: 264px;
+}
+.footer-container {
+}
+
+/*=========================================/FOOTER==*/
+/*--------------------------------------PORTFOLIO---*/
+.portfolio-section {
+  padding-top: 96px;
+  padding-bottom: 120px;
+}
+.filter-btn {
+  padding: 12px 24px;
+
+  color: var(--theme-dark);
+  font-family: inherit;
+  font-size: 16px;
+  background-color: var(--logo-color-light);
+  font-weight: 500;
+  letter-spacing: 0.04em;
+  line-height: var(--typical-lh);
+  border: 1px solid var(--text-color-light);
+  border-radius: 4px;
+}
+.filter-btn:hover,
+.filter-btn:focus {
+  background-color: var(--akcent-color);
+  color: var(--color-theme-dark);
+  border: 1px transparent;
+  box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
+    0px 2px 2px rgba(0, 0, 0, 0.12);
+}
+.filter {
+  margin-bottom: 72px;
+
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
+.examples {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 24px;
+}
+.example {
+  width: calc((100% - 48px) / 3);
+  background: var(--color-theme-dark);
+}
+.example:not(:nth-child(-n + 3)) {
+  margin-top: 24px;
+}
+
+.example-img {
+  width: 100%;
+}
+.example-coment {
+}
+
+.exam-description {
+  padding-top: 32px;
+  padding-bottom: 32px;
+  padding-left: 16px;
+  padding-right: 16px;
+
+  border-bottom: 1px solid var(--text-color-light);
+  border-left: 1px solid var(--text-color-light);
+  border-right: 1px solid var(--text-color-light);
+}
+.portfolio-box {
+}
+/*====================================/PORTFOLIO===*/ ;
