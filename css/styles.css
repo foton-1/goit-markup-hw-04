@@ -502,18 +502,15 @@ social-link задавши посиланню висоту і ширину,
 .example {
   width: calc((100% - 48px) / 3);
   background: var(--color-theme-dark);
-  border: 1px solid blueviolet;
-  background-color: chartreuse;
 }
 .example:not(:nth-child(-n + 3)) {
   margin-top: 24px;
 }
 .example-link {
-  border: 1px solid #31d0aa;
+  display: block;
 }
 .example-img {
   width: 100%;
-  border: 1px solid tomato;
 }
 .example:hover {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -531,7 +528,6 @@ social-link задавши посиланню висоту і ширину,
   border-bottom: 1px solid var(--text-color-light);
   border-left: 1px solid var(--text-color-light);
   border-right: 1px solid var(--text-color-light);
-  background-color: coral;
 }
 .portfolio-box {
 }
