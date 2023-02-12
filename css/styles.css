@@ -9,6 +9,7 @@
   --typical-lh: 1.5;
   --typical-ls: 0.02em;
   --custommers-color-norm: #8e8f99;
+  --max-width-section: 1440px;
 }
 
 .list {
@@ -54,7 +55,7 @@ address {
   padding-right: 15px;
 }
 
-/*-----------------------COMPONENTS----------------*/
+/*---------------------------------COMPONENTS--*/
 .section-title {
   font-size: 36px;
   line-height: 1.11;
@@ -194,6 +195,9 @@ span.akcent {
 
   background-color: var(--main-title-color);
   text-align: center;
+  max-width: var(--max-width-section);
+  margin-right: auto;
+  margin-left: auto;
 
   background-image: linear-gradient(
       rgba(46, 47, 66, 0.7),
@@ -202,7 +206,7 @@ span.akcent {
     url(../images/people-office-heder-orig-min.jpg);
   background-repeat: no-repeat;
   background-position: center;
-  background-size: 1440px;
+  background-size: cover;
 
   /*outline: 1px solid hsl(0, 95%, 50%);*/
 }
@@ -274,6 +278,7 @@ span.akcent {
   display: block;
   content: '';
   height: 112px;
+  border-radius: 4px;
   background-color: var(--logo-color-light);
   background-position: center;
   background-repeat: no-repeat;
@@ -313,6 +318,9 @@ span.akcent {
 .team {
   padding-top: 120px;
   padding-bottom: 120px;
+  max-width: var(--max-width-section);
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: var(--logo-color-light);
 }
@@ -328,10 +336,10 @@ span.akcent {
   max-width: calc((100% - 72px) / 4);
 }
 .team-person {
-  text-align: center;
+  /*text-align: center;*/
 }
 
-.team-percon-info {
+.team-person-info {
   padding-top: 32px;
   padding-bottom: 32px;
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
@@ -339,6 +347,7 @@ span.akcent {
   border-radius: 0px 0px 4px 4px;
 
   background-color: var(--color-theme-dark);
+  text-align: center;
 }
 .team-person-text {
   margin-bottom: 8px;
@@ -347,7 +356,7 @@ span.akcent {
   list-style: none;
   display: flex;
   justify-content: center;
-  align-items: center;
+  /*align-items: center;*/
   gap: 24px;
 }
 .social-list-item {
@@ -386,7 +395,7 @@ social-link задавши посиланню висоту і ширину,
   display: flex;
   flex-wrap: wrap;
   gap: 24px;
-  justify-content: center;
+  /*justify-content: center;*/
 }
 .customers-item {
 }
@@ -398,7 +407,6 @@ social-link задавши посиланню висоту і ширину,
   height: 88px;
   border: 1px solid var(--custommers-color-norm);
   border-radius: 4px;
-  cursor: pointer;
 }
 .customers-logo:hover,
 .customers-logo:focus {
@@ -418,6 +426,9 @@ social-link задавши посиланню висоту і ширину,
 .footer {
   padding-top: 100px;
   padding-bottom: 100px;
+  max-width: var(--max-width-section);
+  margin-right: auto;
+  margin-left: auto;
 
   background-color: var(--main-title-color);
 }
@@ -430,15 +441,16 @@ social-link задавши посиланню висоту і ширину,
   max-width: 264px;
 }
 .footer-container {
+  display: flex;
 }
 .footer-logo-box {
-  display: inline-block;
+  /*display: inline-block;*/
   margin-right: 120px;
 }
 .footer-social-box {
-  display: inline-block;
+  /*display: inline-block;
   max-width: 208px;
-  vertical-align: top;
+  vertical-align: top;*/
 }
 .footer-heading {
   font-weight: 500;
@@ -466,6 +478,15 @@ social-link задавши посиланню висоту і ширину,
   padding-top: 96px;
   padding-bottom: 120px;
 }
+.portfolio-box {
+}
+.filter {
+  margin-bottom: 72px;
+
+  display: flex;
+  gap: 24px;
+  justify-content: center;
+}
 .filter-btn {
   padding: 12px 24px;
 
@@ -487,13 +508,7 @@ social-link задавши посиланню висоту і ширину,
   box-shadow: 0px 3px 1px rgba(0, 0, 0, 0.1), 0px 2px 1px rgba(0, 0, 0, 0.08),
     0px 2px 2px rgba(0, 0, 0, 0.12);
 }
-.filter {
-  margin-bottom: 72px;
 
-  display: flex;
-  gap: 24px;
-  justify-content: center;
-}
 .examples {
   display: flex;
   flex-wrap: wrap;
@@ -509,14 +524,14 @@ social-link задавши посиланню висоту і ширину,
 .example-link {
   display: block;
 }
+
 .example-img {
   width: 100%;
 }
-.example:hover {
+.example-link:hover,
+.example-link:focus {
   box-shadow: 0px 1px 6px rgba(46, 47, 66, 0.08),
     0px 1px 1px rgba(46, 47, 66, 0.16), 0px 2px 1px rgba(46, 47, 66, 0.08);
-}
-.example-coment {
 }
 
 .exam-description {
@@ -529,6 +544,6 @@ social-link задавши посиланню висоту і ширину,
   border-left: 1px solid var(--text-color-light);
   border-right: 1px solid var(--text-color-light);
 }
-.portfolio-box {
+.example-coment {
 }
 /*====================================/PORTFOLIO===*/ ;
